@@ -1,1 +1,0 @@
-this is for the api will be removed soon along with the other READMES
