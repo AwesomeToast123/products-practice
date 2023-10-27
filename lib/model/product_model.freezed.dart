@@ -20,27 +20,27 @@ ProductMethod _$ProductMethodFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$ProductMethod {
-  @JsonKey(name: 'id')
+  @JsonKey(name: "id")
   String get id => throw _privateConstructorUsedError;
-  @JsonKey(name: 'title')
+  @JsonKey(name: "title")
   String get title => throw _privateConstructorUsedError;
-  @JsonKey(name: 'description')
+  @JsonKey(name: "description")
   String get description => throw _privateConstructorUsedError;
-  @JsonKey(name: 'price')
+  @JsonKey(name: "price")
   int get price => throw _privateConstructorUsedError;
-  @JsonKey(name: 'discountPercentage')
+  @JsonKey(name: "discountPercentage")
   double get discountPercentage => throw _privateConstructorUsedError;
-  @JsonKey(name: 'rating')
+  @JsonKey(name: "rating")
   double get rating => throw _privateConstructorUsedError;
-  @JsonKey(name: 'stock')
+  @JsonKey(name: "stock")
   int get stock => throw _privateConstructorUsedError;
-  @JsonKey(name: 'brand')
+  @JsonKey(name: "brand")
   String get brand => throw _privateConstructorUsedError;
-  @JsonKey(name: 'category')
+  @JsonKey(name: "category")
   String get category => throw _privateConstructorUsedError;
-  @JsonKey(name: 'thumbnail')
+  @JsonKey(name: "thumbnail")
   String get thumbnail => throw _privateConstructorUsedError;
-  @JsonKey(name: 'images')
+  @JsonKey(name: "images")
   String get images => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -56,17 +56,17 @@ abstract class $ProductMethodCopyWith<$Res> {
       _$ProductMethodCopyWithImpl<$Res, ProductMethod>;
   @useResult
   $Res call(
-      {@JsonKey(name: 'id') String id,
-      @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'price') int price,
-      @JsonKey(name: 'discountPercentage') double discountPercentage,
-      @JsonKey(name: 'rating') double rating,
-      @JsonKey(name: 'stock') int stock,
-      @JsonKey(name: 'brand') String brand,
-      @JsonKey(name: 'category') String category,
-      @JsonKey(name: 'thumbnail') String thumbnail,
-      @JsonKey(name: 'images') String images});
+      {@JsonKey(name: "id") String id,
+      @JsonKey(name: "title") String title,
+      @JsonKey(name: "description") String description,
+      @JsonKey(name: "price") int price,
+      @JsonKey(name: "discountPercentage") double discountPercentage,
+      @JsonKey(name: "rating") double rating,
+      @JsonKey(name: "stock") int stock,
+      @JsonKey(name: "brand") String brand,
+      @JsonKey(name: "category") String category,
+      @JsonKey(name: "thumbnail") String thumbnail,
+      @JsonKey(name: "images") String images});
 }
 
 /// @nodoc
@@ -152,17 +152,17 @@ abstract class _$$ProductMethodImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: 'id') String id,
-      @JsonKey(name: 'title') String title,
-      @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'price') int price,
-      @JsonKey(name: 'discountPercentage') double discountPercentage,
-      @JsonKey(name: 'rating') double rating,
-      @JsonKey(name: 'stock') int stock,
-      @JsonKey(name: 'brand') String brand,
-      @JsonKey(name: 'category') String category,
-      @JsonKey(name: 'thumbnail') String thumbnail,
-      @JsonKey(name: 'images') String images});
+      {@JsonKey(name: "id") String id,
+      @JsonKey(name: "title") String title,
+      @JsonKey(name: "description") String description,
+      @JsonKey(name: "price") int price,
+      @JsonKey(name: "discountPercentage") double discountPercentage,
+      @JsonKey(name: "rating") double rating,
+      @JsonKey(name: "stock") int stock,
+      @JsonKey(name: "brand") String brand,
+      @JsonKey(name: "category") String category,
+      @JsonKey(name: "thumbnail") String thumbnail,
+      @JsonKey(name: "images") String images});
 }
 
 /// @nodoc
@@ -241,53 +241,53 @@ class __$$ProductMethodImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$ProductMethodImpl implements _ProductMethod {
   const _$ProductMethodImpl(
-      {@JsonKey(name: 'id') required this.id,
-      @JsonKey(name: 'title') required this.title,
-      @JsonKey(name: 'description') required this.description,
-      @JsonKey(name: 'price') required this.price,
-      @JsonKey(name: 'discountPercentage') required this.discountPercentage,
-      @JsonKey(name: 'rating') required this.rating,
-      @JsonKey(name: 'stock') required this.stock,
-      @JsonKey(name: 'brand') required this.brand,
-      @JsonKey(name: 'category') required this.category,
-      @JsonKey(name: 'thumbnail') required this.thumbnail,
-      @JsonKey(name: 'images') required this.images});
+      {@JsonKey(name: "id") required this.id,
+      @JsonKey(name: "title") required this.title,
+      @JsonKey(name: "description") required this.description,
+      @JsonKey(name: "price") required this.price,
+      @JsonKey(name: "discountPercentage") required this.discountPercentage,
+      @JsonKey(name: "rating") required this.rating,
+      @JsonKey(name: "stock") required this.stock,
+      @JsonKey(name: "brand") required this.brand,
+      @JsonKey(name: "category") required this.category,
+      @JsonKey(name: "thumbnail") required this.thumbnail,
+      @JsonKey(name: "images") required this.images});
 
   factory _$ProductMethodImpl.fromJson(Map<String, dynamic> json) =>
       _$$ProductMethodImplFromJson(json);
 
   @override
-  @JsonKey(name: 'id')
+  @JsonKey(name: "id")
   final String id;
   @override
-  @JsonKey(name: 'title')
+  @JsonKey(name: "title")
   final String title;
   @override
-  @JsonKey(name: 'description')
+  @JsonKey(name: "description")
   final String description;
   @override
-  @JsonKey(name: 'price')
+  @JsonKey(name: "price")
   final int price;
   @override
-  @JsonKey(name: 'discountPercentage')
+  @JsonKey(name: "discountPercentage")
   final double discountPercentage;
   @override
-  @JsonKey(name: 'rating')
+  @JsonKey(name: "rating")
   final double rating;
   @override
-  @JsonKey(name: 'stock')
+  @JsonKey(name: "stock")
   final int stock;
   @override
-  @JsonKey(name: 'brand')
+  @JsonKey(name: "brand")
   final String brand;
   @override
-  @JsonKey(name: 'category')
+  @JsonKey(name: "category")
   final String category;
   @override
-  @JsonKey(name: 'thumbnail')
+  @JsonKey(name: "thumbnail")
   final String thumbnail;
   @override
-  @JsonKey(name: 'images')
+  @JsonKey(name: "images")
   final String images;
 
   @override
@@ -338,55 +338,55 @@ class _$ProductMethodImpl implements _ProductMethod {
 
 abstract class _ProductMethod implements ProductMethod {
   const factory _ProductMethod(
-          {@JsonKey(name: 'id') required final String id,
-          @JsonKey(name: 'title') required final String title,
-          @JsonKey(name: 'description') required final String description,
-          @JsonKey(name: 'price') required final int price,
-          @JsonKey(name: 'discountPercentage')
+          {@JsonKey(name: "id") required final String id,
+          @JsonKey(name: "title") required final String title,
+          @JsonKey(name: "description") required final String description,
+          @JsonKey(name: "price") required final int price,
+          @JsonKey(name: "discountPercentage")
           required final double discountPercentage,
-          @JsonKey(name: 'rating') required final double rating,
-          @JsonKey(name: 'stock') required final int stock,
-          @JsonKey(name: 'brand') required final String brand,
-          @JsonKey(name: 'category') required final String category,
-          @JsonKey(name: 'thumbnail') required final String thumbnail,
-          @JsonKey(name: 'images') required final String images}) =
+          @JsonKey(name: "rating") required final double rating,
+          @JsonKey(name: "stock") required final int stock,
+          @JsonKey(name: "brand") required final String brand,
+          @JsonKey(name: "category") required final String category,
+          @JsonKey(name: "thumbnail") required final String thumbnail,
+          @JsonKey(name: "images") required final String images}) =
       _$ProductMethodImpl;
 
   factory _ProductMethod.fromJson(Map<String, dynamic> json) =
       _$ProductMethodImpl.fromJson;
 
   @override
-  @JsonKey(name: 'id')
+  @JsonKey(name: "id")
   String get id;
   @override
-  @JsonKey(name: 'title')
+  @JsonKey(name: "title")
   String get title;
   @override
-  @JsonKey(name: 'description')
+  @JsonKey(name: "description")
   String get description;
   @override
-  @JsonKey(name: 'price')
+  @JsonKey(name: "price")
   int get price;
   @override
-  @JsonKey(name: 'discountPercentage')
+  @JsonKey(name: "discountPercentage")
   double get discountPercentage;
   @override
-  @JsonKey(name: 'rating')
+  @JsonKey(name: "rating")
   double get rating;
   @override
-  @JsonKey(name: 'stock')
+  @JsonKey(name: "stock")
   int get stock;
   @override
-  @JsonKey(name: 'brand')
+  @JsonKey(name: "brand")
   String get brand;
   @override
-  @JsonKey(name: 'category')
+  @JsonKey(name: "category")
   String get category;
   @override
-  @JsonKey(name: 'thumbnail')
+  @JsonKey(name: "thumbnail")
   String get thumbnail;
   @override
-  @JsonKey(name: 'images')
+  @JsonKey(name: "images")
   String get images;
   @override
   @JsonKey(ignore: true)
