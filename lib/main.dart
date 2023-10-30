@@ -1,4 +1,8 @@
+import 'package:async_redux/async_redux.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:products_practice/features/product_overview/product_connector.dart';
+import 'package:products_practice/state/app_state.dart';
 
 //Sample api
 //https://dummyjson.com/products
@@ -16,7 +20,15 @@ import 'package:flutter/material.dart';
 // "https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
 
 void main() {
-  runApp(const MyApp());
+  final store = Store<AppState>(
+      initialState: AppState(), actionObservers: kReleaseMode ? null : [ConsoleActionObserver<AppState>()]);
+
+  runApp(
+    StoreProvider(
+      store: store,
+      child: const MaterialApp(home: ProductConnector()),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
