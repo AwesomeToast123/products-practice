@@ -21,7 +21,9 @@ import 'package:products_practice/state/app_state.dart';
 
 void main() {
   final store = Store<AppState>(
-      initialState: AppState(), actionObservers: kReleaseMode ? null : [ConsoleActionObserver<AppState>()]);
+    initialState: AppState(),
+    actionObservers: kReleaseMode ? null : [ConsoleActionObserver<AppState>()],
+  );
 
   runApp(
     StoreProvider(

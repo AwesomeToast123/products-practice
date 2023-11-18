@@ -13,7 +13,6 @@ class ProductConnector extends StatelessWidget {
     return StoreConnector<AppState, ProductDetailsVm>(
       vm: () => ProductDetailsVmFactory(),
       onInit: (store) => store.dispatchAsync(GetProductsAction(actionKey: '')),
-      onDispose: null,
       builder: (context, vm) => ProductPage(
         products: vm.productDetail,
       ),

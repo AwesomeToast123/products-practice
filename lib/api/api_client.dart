@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 class ApiClient {
   late Dio dio;
 
-  static const String baseUrl = "https://dummyjson.com/products";
+  static const String baseUrl = "https://dummyjson.com";
 
   ApiClient() {
     dio = Dio()

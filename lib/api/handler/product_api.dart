@@ -2,20 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:products_practice/api/api_client.dart';
 import 'package:products_practice/model/product_model.dart';
 
-//Sample api
-//https://dummyjson.com/products
-// "id":1,
-// "title":"iPhone 9",
-// "description":"An apple mobile which is nothing like apple",
-// "price":549,
-// "discountPercentage":12.96,
-// "rating":4.69,
-// "stock":94,
-// "brand":"Apple",
-// "category":"smartphones",
-// "thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-// "images":["https://i.dummyjson.com/data/products/1/1.jpg","https://i.dummyjson.com/data/products/1/2.jpg",
-// "https://i.dummyjson.com/data/products/1/3.jpg","https://i.dummyjson.com/data/products/1/4.jpg","https://i.dummyjson.com/data/products/1/thumbnail.jpg"]}
+typedef Json = Map<String, dynamic>;
 
 class ProductApi {
   ProductApi({
@@ -26,7 +13,7 @@ class ProductApi {
   final ApiClient apiClient;
   final Uri baseUrl;
 
-  Future<ProductMethod> getProductList({required String offset, required String limit}) async {
+  Future<List<ProductMethod>> getProductList({required String offset, required String limit}) async {
     final queryParam = <String, dynamic>{};
 
     queryParam['limit'] = limit;
@@ -34,10 +21,16 @@ class ProductApi {
 
     final uri = baseUrl.replace(
       queryParameters: queryParam,
-      path: '${baseUrl.path}',
+      path: '${baseUrl.path}/products',
     );
 
+    return await apiClient.dio.getUri(uri).then((response) {
+      return response.data['products']
+          .map<ProductMethod>((dynamic data) => ProductMethod.fromJson(data as Json))
+          .toList();
+    });
+
     Response response = await apiClient.dio.getUri(uri);
-    return ProductMethod.fromJson(response.data);
+    return (response.data as List).map((x) => ProductMethod.fromJson(x)).toList();
   }
 }
